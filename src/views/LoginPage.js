@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
-import {singInWithEmailAndPassword} from "firebase/auth"
+import {signInWithEmailAndPassword} from "firebase/auth"
 import {useNavigate} from "react-router-dom"
 import {auth} from "../firebase"
 
@@ -43,7 +43,7 @@ export default function LoginPage() {
 
           if (canLogin){
             try{
-              await singInWithEmailAndPassword(auth,username,password)
+              await signInWithEmailAndPassword(auth,username,password)
               navigate("/");
             } catch (error){
               setError(error.message)
@@ -54,7 +54,7 @@ export default function LoginPage() {
           Login
         </Button>
       </Form>
-      <p></p>
+      <p>{error}</p>
     </Container>
   );
 }
