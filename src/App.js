@@ -7,7 +7,6 @@ import PostPageUpdate from "./views/PostPageUpdate";
 import SignUpPage from "./views/SignUpPage";
 
 
-
 function App() {
   return (
     <BrowserRouter>
