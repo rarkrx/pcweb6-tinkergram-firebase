@@ -1,10 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LoginPage from "./views/LoginPage";
+import PostPageAdd from "./views/PostPageAdd";
+import PostPageDetails from "./views/PostPageDetails";
 import PostPageHome from "./views/PostPageHome";
+import PostPageUpdate from "./views/PostPageUpdate";
 import SignUpPage from "./views/SignUpPage";
-import PostPageAdd from "./views/PostPageAdd;";
-import PostPageDetails from "./views/PostPageDetails;";
-import PostPageUpdate from "./views/PostPageUpdate;";
+
+
 
 function App() {
   return (

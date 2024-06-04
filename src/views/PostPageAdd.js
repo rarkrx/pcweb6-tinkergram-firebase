@@ -12,7 +12,7 @@ export default function PostPageAdd() {
   const [image, setImage] = useState("");
   const navigate = useNavigate("")
   async function addPost() {
-    await addDoc(collection(db,"posts", [caption,image]))
+    await addDoc(collection(db,"posts"), {caption,image})
     navigate("/")
   }
 
